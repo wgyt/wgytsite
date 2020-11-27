@@ -81,7 +81,7 @@ app.get('/403', function(req, res) {
     res.status(403).send('403 Forbidden')
 })
 app.get('/404', function(req, res) {
-    res.status(404).send('404 Not Found')
+    res.status(404).sendFile(`${__dirname}/public/404.html`)
 })
 app.get('/405', function(req, res) {
     res.status(405).send('405 Method Not Allowed')
@@ -183,3 +183,9 @@ app.get('/511', function(req, res) {
 app.get('/735', function(req, res) {
     res.status(735).send('735: Wgyt735yt was here')
 })
+
+
+/* 404 page */
+app.get("*", function(req,res){
+    res.status(404).sendFile(`${__dirname}/public/404.html`)
+});

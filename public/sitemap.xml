@@ -4,9 +4,6 @@
     <loc>https://www.wgyt.tk/</loc>
   </url>
   <url>
-    <loc>https://www.wgyt.tk/home</loc>
-  </url>
-  <url>
     <loc>https://www.wgyt.tk/about</loc>
   </url>
   <url>
@@ -16,9 +13,12 @@
     <loc>https://www.wgyt.tk/scratch</loc>
   </url>
   <url>
-    <loc>https://www.wgyt.tk/Portfolio</loc>
+    <loc>https://www.wgyt.tk/portfolio</loc>
   </url>
   <url>
-    <loc>https://www.wgyt.tk/blog/1</loc>
+    <loc>https://www.wgyt.tk/blog/1/</loc>
+  </url>
+  <url>
+    <loc>https://www.wgyt.tk/blog/2/</loc>
   </url>
 </urlset>

@@ -1,16 +1,30 @@
 {
-  "name": "WgytWebsite",
+  "name": "www.wgyt.tk",
   "version": "1.0.0",
-  "description": "",
+  "description": "www.wgyt.tk is wgyt's website",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "private": true,
   "dependencies": {
     "express": "^4.17.1",
     "sitemap-generator": "^8.5.1"
-  }
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "npx nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wgyt735yt/WgytWebsiteJS.git"
+  },
+  "keywords": [],
+  "author": "wgyt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wgyt735yt/WgytWebsiteJS/issues"
+  },
+  "homepage": "https://github.com/wgyt735yt/WgytWebsiteJS#readme"
 }

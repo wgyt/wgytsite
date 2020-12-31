@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Fixes :P -->
+	<style>
+		.jumbotron-fluid {
+			padding-right: 0;
+			padding-left: 0;
+			border-radius: 0;
+		}
+
+		.jumbotron {
+			padding: 2rem 1rem;
+			margin-bottom: 2rem;
+			background-color: #e9ecef;
+			border-radius: .3rem;
+		}
+
+		.breadcrumb {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			padding: .75rem 1rem;
+			margin-bottom: 1rem;
+			list-style: none;
+			background-color: #e9ecef;
+			border-radius: .25rem
+		}
+
+		.breadcrumb-item {
+			display: -ms-flexbox;
+			display: flex
+		}
+
+		.breadcrumb-item+.breadcrumb-item {
+			padding-left: .5rem
+		}
+
+		.breadcrumb-item+.breadcrumb-item::before {
+			display: inline-block;
+			padding-right: .5rem;
+			color: #6c757d;
+			content: "/"
+		}
+
+		.breadcrumb-item+.breadcrumb-item:hover::before {
+			text-decoration: underline
+		}
+
+		.breadcrumb-item+.breadcrumb-item:hover::before {
+			text-decoration: none
+		}
+
+		.breadcrumb-item.active {
+			color: #6c757d
+		}
+	</style>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	 crossorigin="anonymous">
+	<!-- SEO -->
+	<title>Wgyt | Blog | Comments are now on my blog!</title>
+	<meta name="twitter:image" content="https://www.wgyt.tk/images/logo.png">
+	<meta content="I just added comments to my website :) Read more on Wgyt's blog." name="description">
+	<link href="//www.wgyt.tk/images/logo.png" rel="shortcut icon">
+	<link href="//www.wgyt.tk/images/logo.png" rel="apple-touch-icon">
+	<!-- Scripts and Styles -->
+	<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+	<script>
+	commentBox("5739291523153920-proj", {
+			backgroundColor: '#000',
+			textColor: '#fff'
+	});
+	</script>
+	<link rel="stylesheet" href="//www.wgyt.tk/main.css">
+	<script type="text/javascript">
+		window.addEventListener("load", () => {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("//www.wgyt.tk/service-worker.js");
+      }
+    });
+	</script>
+	<!-- PWA -->
+	<meta name="theme-color" content="#ff0000">
+	<link rel="manifest" href="/./manifest.webmanifest">
+</head>
+
+<body>
+	<!-- Alerts -->
+	<!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+		<strong>This website is under construction.</strong> This website is transitioning to Bootstrap 5.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div> -->
+	<!-- Header -->
+	<nav class="navbar navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/">
+				<img src="//www.wgyt.tk/images/logo.png" alt="Wgyt Logo" width="30" height="30" class="d-inline-block align-top">
+        Wgyt
+      </a>
+      <div class="btn-group">
+        <a href="/" class="btn btn-primary" aria-current="page">Home</a>
+        <a href="/about" class="btn btn-primary">About</a>
+        <a href="/blog" class="btn btn-primary active">Blog</a>
+        <a href="/scratch" class="btn btn-primary">Scratch</a>
+        <a href="/portfolio" class="btn btn-primary">Portfolio</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Jumbotron -->
+  <div class="card bg-dark text-white">
+    <div class="card-overlay center" style="background-image: url('//www.wgyt.tk/images/logo.png'">
+      <br><br>
+      <h1 class="card-title">Wgyt</h1>
+      <p class="card-text">Welcome to Wgyt's website.</p>
+      <br><br>
+    </div>
+  </div>
+  <hr>
+  <!-- Blog Posts -->
+  <nav aria-label="breadcrumb">
+    <!-- Header -->
+    <ol class="breadcrumb bg-dark">
+      <li class="breadcrumb-item" aria-current="page"><a href="/blog">Blog Posts</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Post 3</li>
+    </ol>
+  </nav>
+  <div class="card text-white bg-dark mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Comments are now on my blog :)</h5>
+      <p class="card-text" style="color:white">I just added comments to my website :) I decided to use <a href="//commentbox.io">Commentbox</a> to provide comments.</p>
+    </div>
+  </div>
+  <hr>
+	<div class="commentbox"></div>
+  <!-- End Page -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>

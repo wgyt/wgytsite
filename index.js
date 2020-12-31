@@ -32,6 +32,9 @@ app.get("/blog/1", (request, response) => {
 app.get("/blog/2", (request, response) => {
   response.sendFile(`${__dirname}/blog/2.html`);
 });
+app.get("/blog/3", (request, response) => {
+  response.sendFile(`${__dirname}/blog/3.html`);
+});
 // next post here
 
 app.get("/portfolio", (request, response) => {

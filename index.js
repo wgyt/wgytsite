@@ -52,8 +52,11 @@ app.get("/scratchsound/search.xml", (request, response) => {
 app.get("/manifest.webmanifest", (request, response) => {
   response.sendFile(`${__dirname}/public/manifest.webmanifest`);
 });
-app.get("/sitemap", (request, response) => {
-  response.redirect(301, '/sitemap.xml')
+app.get("/sitemap.xml", (request, response) => {
+  response.sendFile(`${__dirname}/public/sitemap.xml`);
+});
+app.get("/rss.xml", (request, response) => {
+  response.sendFile(`${__dirname}/public/rss.xml`);
 });
 app.get("/main.css", (request, response) => {
   response.sendFile(`${__dirname}/public/main.css`);
@@ -64,17 +67,6 @@ app.get("/images/logo.png", (request, response) => {
 app.get("/tocho/logo.svg", (request, response) => {
   response.sendFile(`${__dirname}/public/tocho.svg`);
 });
-// create generator
-const generator = SitemapGenerator('https://www.wgyt.tk', {
-  stripQuerystring: false,
-  filepath: './public/sitemap.xml'
-});
-// register event listeners
-generator.on('done', () => {
-  // sitemaps created
-});
-// start the crawler
-generator.start();
 /* Webpages */
 app.get('/%E0%B6%9E', function(req, res) {
   res.send("AMONG US")

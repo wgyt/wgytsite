@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+  <title>Wgyt Blog</title>
+  <link>https://www.wgyt.tk/blog/</link>
+  <description>The official blog of Wgyt</description>
+	<atom:link href="https://www.wgyt.tk/rss.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>Welcome To My Blog</title>
+    <link>https://www.wgyt.tk/blog/1/</link>
+    <guid>https://www.wgyt.tk/blog/1/</guid>
+    <description>My Blog Website is now avalible and this is my first post! Read more...</description>
+  </item>
+  <item>
+    <title>Science Project</title>
+    <link>https://www.wgyt.tk/blog/2/</link>
+    <guid>https://www.wgyt.tk/blog/2/</guid>
+    <description>My Science project about turtle's and earth's magnetic field.</description>
+  </item>
+  <item>
+    <title>Comments are now on my blog!</title>
+    <link>https://www.wgyt.tk/blog/3/</link>
+    <guid>https://www.wgyt.tk/blog/3/</guid>
+    <description>I just added comments to my website :)</description>
+  </item>
+</channel>
+
+</rss>

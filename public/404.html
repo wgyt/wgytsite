@@ -1,48 +1,111 @@
-<html lang="en-us">
+<html lang="en"><head>
 
-<head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-  <meta charset="utf-8">
-  <meta name="twitter:image" content="https://www.wgyt.tk/images/logo.png">
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <meta name="theme-color" content="#ff0000">
-  <title>Wgyt | 404</title>
-  <meta name="description" content="404 | Wgyt.">
-  <link rel="shortcut icon" href="/./images/logo.png">
-  <link rel="apple-touch-icon" href="/./images/logo.png">
-  <link rel="stylesheet" href="/../../main.css">
-  <script type="text/javascript">
-    window.addEventListener("load", () => {
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("service-worker.js");
-      }
-    });
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+		.jumbotron-fluid {
+			padding-right: 0;
+			padding-left: 0;
+			border-radius: 0;
+		}
+
+		.jumbotron {
+			padding: 2rem 1rem;
+			margin-bottom: 2rem;
+			background-color: #e9ecef;
+			border-radius: .3rem;
+		}
+
+		.breadcrumb {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			padding: .75rem 1rem;
+			margin-bottom: 1rem;
+			list-style: none;
+			background-color: #e9ecef;
+			border-radius: .25rem
+		}
+
+		.breadcrumb-item {
+			display: -ms-flexbox;
+			display: flex
+		}
+
+		.breadcrumb-item+.breadcrumb-item {
+			padding-left: .5rem
+		}
+
+		.breadcrumb-item+.breadcrumb-item::before {
+			display: inline-block;
+			padding-right: .5rem;
+			color: #6c757d;
+			content: "/"
+		}
+
+		.breadcrumb-item+.breadcrumb-item:hover::before {
+			text-decoration: underline
+		}
+
+		.breadcrumb-item+.breadcrumb-item:hover::before {
+			text-decoration: none
+		}
+
+		.breadcrumb-item.active {
+			color: #6c757d
+		}
+	</style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+<title>Wgyt | 404</title>
+<link href="//www.wgyt.tk/images/logo.png" rel="shortcut icon">
+<link href="//www.wgyt.tk/images/logo.png" rel="apple-touch-icon">
+
+<link rel="stylesheet" href="//www.wgyt.tk/main.css">
+<script type="text/javascript">
+		window.addEventListener("load", () => {  if ("serviceWorker" in navigator) {    navigator.serviceWorker.register("//www.wgyt.tk/service-worker.js");  }});
+	</script>
+
+<meta name="theme-color" content="#ff0000">
+<link rel="manifest" href="/./manifest.webmanifest">
 </head>
+<body>
 
-<body cz-shortcut-listen="true">
-  <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="/"> <img src="/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">Wgyt</a>
-    <ul class="nav nav-pills justify-content-center">
-      <li class="nav-item"> <a class="nav-link " href="home">Home</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="about">About</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="blog">Blog</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="scratch" tabindex="-1">Scratch</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="Portfolio" tabindex="-1">Portfolio</a> </li>
-    </ul>
-  </nav>
-  <div class="container">
-    <div class="jumbotron jumbotron-fluid logobg" style="background-image: url(&quot;/./images/logo.png&quot;">
-      <div class="container">
-        <h1 class="display-4">Wgyt</h1>
-        <p class="lead">404 Not Found</p>
-        <a class="btn btn-primary" href="/././">Go Home</a>
-      </div>
-    </div>
-  </div>
-</body>
 
-</html>
+
+<nav class="navbar navbar-dark bg-dark">
+<div class="container-fluid">
+<a class="navbar-brand" href="/">
+<img src="//www.wgyt.tk/images/logo.png" alt="Wgyt Logo" width="30" height="30" class="d-inline-block align-top">
+Wgyt
+</a>
+<div class="btn-group">
+<a href="/" class="btn btn-primary" aria-current="page">Home</a>
+<a href="/about" class="btn btn-primary">About</a>
+<a href="/blog" class="btn btn-primary">Blog</a>
+<a href="/scratch" class="btn btn-primary">Scratch</a>
+<a href="/portfolio" class="btn btn-primary">Portfolio</a>
+</div>
+</div>
+</nav>
+
+<div class="card bg-dark text-white">
+<div class="card-overlay center jumbotron" style="background-image: url('//www.wgyt.tk/images/logo.png'">
+<br><br>
+<h1 class="card-title">Wgyt</h1>
+<p class="card-text">404 Not Found</p>
+<br><br>
+</div>
+</div>
+<hr>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous" type="text/javascript"></script>
+
+</body></html>

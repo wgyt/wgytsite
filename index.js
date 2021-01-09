@@ -1,6 +1,5 @@
 /* Setup Express Js */
 var express = require('express')
-const SitemapGenerator = require('sitemap-generator');
 var app = express()
 /* Express Config */
 var listener = app.listen(process.env.PORT, () => {
@@ -63,6 +62,9 @@ app.get("/main.css", (request, response) => {
 });
 app.get("/images/logo.png", (request, response) => {
   response.sendFile(`${__dirname}/public/logo.png`);
+});
+app.get("/images/logo2.png", (request, response) => {
+  response.sendFile(`${__dirname}/public/logo2.png`);
 });
 app.get("/tocho/logo.svg", (request, response) => {
   response.sendFile(`${__dirname}/public/tocho.svg`);
